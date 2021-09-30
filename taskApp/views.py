@@ -4,6 +4,6 @@ from .models import SampleData
 # Create your views here.
 
 
-def hello_world(request):
+def getData(request):
     results = SampleData.objects.all()
     return render(request, "index.html", {"data": results})
